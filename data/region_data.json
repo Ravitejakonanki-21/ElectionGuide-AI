@@ -1,0 +1,45 @@
+{
+  "countries": [
+    {
+      "id": "global_demo",
+      "name": "Global (Demo)",
+      "regions": [
+        {
+          "id": "region_alpha",
+          "name": "Region Alpha",
+          "notes": [
+            "Demo region for hackathon use. Rules shown are simplified and educational.",
+            "Always confirm final rules and dates from your official election authority."
+          ],
+          "sampleSchedule": [
+            { "phaseId": "announcement", "label": "Announcement", "when": "T-45 days" },
+            { "phaseId": "registration_window", "label": "Registration/Corrections", "when": "T-45 to T-20 days" },
+            { "phaseId": "nomination_filing", "label": "Nominations", "when": "T-25 to T-18 days" },
+            { "phaseId": "campaign", "label": "Campaign", "when": "T-18 to T-1 day" },
+            { "phaseId": "polling_day", "label": "Polling day", "when": "T day" },
+            { "phaseId": "counting_day", "label": "Counting", "when": "T+1 day" },
+            { "phaseId": "results", "label": "Results", "when": "T+1 to T+2 days" }
+          ]
+        },
+        {
+          "id": "region_beta",
+          "name": "Region Beta",
+          "notes": [
+            "Demo region with a longer registration window.",
+            "Timelines vary; treat this as a sample structure."
+          ],
+          "sampleSchedule": [
+            { "phaseId": "announcement", "label": "Announcement", "when": "T-60 days" },
+            { "phaseId": "registration_window", "label": "Registration/Corrections", "when": "T-60 to T-25 days" },
+            { "phaseId": "nomination_filing", "label": "Nominations", "when": "T-30 to T-22 days" },
+            { "phaseId": "campaign", "label": "Campaign", "when": "T-22 to T-1 day" },
+            { "phaseId": "polling_day", "label": "Polling day", "when": "T day" },
+            { "phaseId": "counting_day", "label": "Counting", "when": "T+1 to T+2 days" },
+            { "phaseId": "results", "label": "Results", "when": "T+2 to T+4 days" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

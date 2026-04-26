@@ -1,0 +1,77 @@
+[
+  {
+    "id": "registration",
+    "title": "A. Voter Registration",
+    "items": [
+      {
+        "id": "id_proof",
+        "label": "Identity proof (accepted ID)",
+        "explanation": "A government-issued or officially accepted ID used to confirm who you are."
+      },
+      {
+        "id": "address_proof",
+        "label": "Address proof (if required)",
+        "explanation": "A document that supports your current address (requirements vary by region).",
+        "optional": true
+      },
+      {
+        "id": "photo",
+        "label": "Passport-size photo (if needed)",
+        "explanation": "Some systems require a recent photo for the voter record.",
+        "optional": true
+      },
+      {
+        "id": "age_proof",
+        "label": "Age proof (if required)",
+        "explanation": "A document used to confirm you meet the minimum voting age.",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "id": "verification_correction",
+    "title": "B. Voter Verification / Correction",
+    "items": [
+      {
+        "id": "voter_id_or_ref",
+        "label": "Voter ID or application reference",
+        "explanation": "Helps you quickly find your record and track updates."
+      },
+      {
+        "id": "supporting_id",
+        "label": "Supporting identity documents",
+        "explanation": "Useful if your name, date of birth, or address needs correction."
+      },
+      {
+        "id": "correction_proof",
+        "label": "Proof for corrections (address/name change, etc.)",
+        "explanation": "Region rules may require a supporting document for specific corrections.",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "id": "polling_day",
+    "title": "C. Polling Day",
+    "items": [
+      {
+        "id": "approved_id",
+        "label": "Approved identity proof",
+        "explanation": "Carry an accepted ID for verification at the polling station."
+      },
+      {
+        "id": "voter_slip",
+        "label": "Voter slip / polling information (if provided)",
+        "explanation": "Can help you find your booth faster; often optional.",
+        "optional": true
+      },
+      {
+        "id": "alternate_ids",
+        "label": "Alternate accepted ID (backup)",
+        "explanation": "If your primary ID is unavailable, some regions allow alternates.",
+        "optional": true
+      }
+    ]
+  }
+]
+

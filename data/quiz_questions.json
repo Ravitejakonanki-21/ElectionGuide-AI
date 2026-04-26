@@ -1,0 +1,60 @@
+[
+  {
+    "id": "q1",
+    "question": "Which step usually comes first for a new voter?",
+    "choices": [
+      { "id": "a", "label": "Check eligibility and registration requirements", "scoreDelta": 2 },
+      { "id": "b", "label": "Wait until polling day and ask at the booth", "scoreDelta": 0, "feedback": "It’s better to prepare early so you don’t miss deadlines." },
+      { "id": "c", "label": "Assume you are registered automatically", "scoreDelta": 0, "feedback": "Many regions require registration or verification." }
+    ],
+    "learnMore": [
+      "Start with eligibility, then register (if required), then verify your voter details."
+    ]
+  },
+  {
+    "id": "q2",
+    "question": "Why is it important to verify your name in the voter list?",
+    "choices": [
+      { "id": "a", "label": "To confirm your details and polling station are correct", "scoreDelta": 2 },
+      { "id": "b", "label": "Because it is optional and rarely useful", "scoreDelta": 0, "feedback": "Verification prevents last-minute surprises." },
+      { "id": "c", "label": "Only candidates need to do it", "scoreDelta": 0, "feedback": "Voters benefit from verification too." }
+    ]
+  },
+  {
+    "id": "q3",
+    "question": "What’s a good polling-day preparation habit?",
+    "choices": [
+      { "id": "a", "label": "Pack your accepted ID and essentials the night before", "scoreDelta": 2 },
+      { "id": "b", "label": "Bring any ID you find in your wallet", "scoreDelta": 1, "feedback": "Try to confirm accepted IDs for your region." },
+      { "id": "c", "label": "Rely on a friend to bring your documents", "scoreDelta": 0, "feedback": "It’s safer to take responsibility for your own documents." }
+    ]
+  },
+  {
+    "id": "q4",
+    "question": "If you recently moved to a new address, what should you do?",
+    "choices": [
+      { "id": "a", "label": "Check if you must update your voter registration/address", "scoreDelta": 2 },
+      { "id": "b", "label": "Vote from your old polling station without updating anything", "scoreDelta": 0, "feedback": "Many systems assign polling stations based on registered address." },
+      { "id": "c", "label": "Ignore it until after the election", "scoreDelta": 0, "feedback": "Updates often have deadlines." }
+    ]
+  },
+  {
+    "id": "q5",
+    "question": "Which source is best for election dates and procedure?",
+    "choices": [
+      { "id": "a", "label": "Official election authority announcements", "scoreDelta": 2 },
+      { "id": "b", "label": "Random forwarded messages", "scoreDelta": 0, "feedback": "Unverified messages can be wrong or misleading." },
+      { "id": "c", "label": "Any screenshot that looks official", "scoreDelta": 0, "feedback": "Screenshots can be edited; prefer official links." }
+    ]
+  },
+  {
+    "id": "q6",
+    "question": "What should you expect during counting and results?",
+    "choices": [
+      { "id": "a", "label": "Results may arrive in stages; final declaration may take time", "scoreDelta": 2 },
+      { "id": "b", "label": "Final results must appear instantly everywhere", "scoreDelta": 0, "feedback": "Large elections can take time to count and certify." },
+      { "id": "c", "label": "Unofficial early claims are always accurate", "scoreDelta": 0, "feedback": "Prefer official result sources." }
+    ]
+  }
+]
+

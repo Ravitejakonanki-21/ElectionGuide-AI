@@ -1,0 +1,39 @@
+[
+  {
+    "id": "d1",
+    "title": "Registration deadline (demo)",
+    "dateISO": "2026-05-15",
+    "urgency": "high",
+    "actionLabel": "Check registration steps",
+    "actionHref": "/process",
+    "description": "If you haven’t registered (or your region requires it), submit before the deadline."
+  },
+  {
+    "id": "d2",
+    "title": "Correction window closes (demo)",
+    "dateISO": "2026-05-22",
+    "urgency": "medium",
+    "actionLabel": "Verify voter details",
+    "actionHref": "/process",
+    "description": "Last chance to fix name/address details in many systems."
+  },
+  {
+    "id": "d3",
+    "title": "Polling day (demo)",
+    "dateISO": "2026-06-05",
+    "urgency": "high",
+    "actionLabel": "Open polling day mode",
+    "actionHref": "/polling-day",
+    "description": "Pack your ID, confirm your polling station, and plan your travel time."
+  },
+  {
+    "id": "d4",
+    "title": "Counting day (demo)",
+    "dateISO": "2026-06-06",
+    "urgency": "low",
+    "actionLabel": "Learn counting basics",
+    "actionHref": "/timeline",
+    "description": "Counting and results may take time—follow official sources."
+  }
+]
+

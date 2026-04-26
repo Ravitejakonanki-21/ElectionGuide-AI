@@ -1,0 +1,117 @@
+[
+  {
+    "id": "announcement",
+    "name": "Election Announcement",
+    "purpose": "Officially starts the election process and publishes key dates.",
+    "typicalDuration": "1–3 days (announcement), followed by a multi-week schedule",
+    "citizenActions": [
+      "Note important dates for your region",
+      "Check voter registration and correction windows",
+      "Start planning polling-day logistics"
+    ],
+    "reminders": [
+      "Use official sources for dates",
+      "Schedules can vary by region"
+    ]
+  },
+  {
+    "id": "registration_window",
+    "name": "Voter Registration / Correction Window",
+    "purpose": "Allows eligible citizens to register and existing voters to update details.",
+    "typicalDuration": "1–6 weeks (varies by region)",
+    "citizenActions": [
+      "Register if you are not on the voter list",
+      "Request corrections (name, address, age) if needed",
+      "Save application/reference numbers"
+    ],
+    "reminders": [
+      "Do not wait for the final day",
+      "Keep copies of your submission and documents"
+    ]
+  },
+  {
+    "id": "nomination_filing",
+    "name": "Candidate Nomination Filing",
+    "purpose": "Candidates submit nominations to participate in the election.",
+    "typicalDuration": "3–10 days",
+    "citizenActions": [
+      "Focus on verifying your voter details and polling station",
+      "Watch for publication of final candidate lists"
+    ],
+    "reminders": [
+      "Ignore unofficial claims about candidates or rules",
+      "Final lists are published after scrutiny in many systems"
+    ]
+  },
+  {
+    "id": "scrutiny",
+    "name": "Nomination Scrutiny",
+    "purpose": "Election authorities verify nominations and publish accepted candidates.",
+    "typicalDuration": "1–3 days",
+    "citizenActions": [
+      "Confirm you know your polling station and documents",
+      "Set reminders for polling day"
+    ],
+    "reminders": [
+      "Stay logistics-focused: dates, location, ID"
+    ]
+  },
+  {
+    "id": "campaign",
+    "name": "Campaign Period",
+    "purpose": "Time when candidates/campaigns communicate with voters (rules vary).",
+    "typicalDuration": "1–6 weeks",
+    "citizenActions": [
+      "Keep your polling-day plan ready",
+      "Avoid misinformation by using trusted sources for voting procedure"
+    ],
+    "reminders": [
+      "This app is educational and neutral; follow official procedure guidance",
+      "If rules include a quiet period, follow local instructions"
+    ]
+  },
+  {
+    "id": "polling_day",
+    "name": "Polling Day",
+    "purpose": "Eligible registered voters cast their ballots at assigned polling stations.",
+    "typicalDuration": "1 day (sometimes multiple days depending on the election)",
+    "citizenActions": [
+      "Carry accepted ID",
+      "Arrive during polling hours",
+      "Follow staff instructions and cast your vote carefully"
+    ],
+    "reminders": [
+      "You usually must vote at your assigned station",
+      "If you face issues, ask polling staff for guidance"
+    ]
+  },
+  {
+    "id": "counting_day",
+    "name": "Vote Counting",
+    "purpose": "Votes are counted and results are tabulated under official procedures.",
+    "typicalDuration": "Several hours to multiple days (varies widely)",
+    "citizenActions": [
+      "Follow updates from official sources",
+      "Understand partial results may change"
+    ],
+    "reminders": [
+      "Be cautious about unverified early result posts",
+      "Final results may require certification"
+    ]
+  },
+  {
+    "id": "results",
+    "name": "Results Declaration",
+    "purpose": "Final results are officially declared/certified.",
+    "typicalDuration": "Same day to several days after counting (varies)",
+    "citizenActions": [
+      "Check official final announcements",
+      "Save key links for reference"
+    ],
+    "reminders": [
+      "Prefer election authority announcements over screenshots",
+      "Understand differences between preliminary and final results"
+    ]
+  }
+]
+

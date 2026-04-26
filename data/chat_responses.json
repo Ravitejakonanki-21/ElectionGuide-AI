@@ -1,0 +1,70 @@
+[
+  {
+    "id": "eligible",
+    "keywords": ["eligible", "eligibility", "can i vote", "am i eligible", "age", "citizen", "citizenship", "resident", "residency"],
+    "answer": [
+      { "type": "text", "content": "Eligibility usually depends on age, citizenship status, and residency rules in your region." },
+      { "type": "steps", "title": "What to do next", "content": ["Check the minimum voting age where you live", "Confirm citizenship/residency requirements", "Register (if your region requires registration)"] },
+      { "type": "callout", "title": "Tip", "content": "Use the Eligibility Checker in this app for a quick, personalized result." }
+    ],
+    "learnMore": [
+      { "type": "text", "content": "If you recently moved, some regions require an address update before you can vote at the new location." }
+    ]
+  },
+  {
+    "id": "register",
+    "keywords": ["register", "registration", "sign up", "enroll", "apply", "voter registration"],
+    "answer": [
+      { "type": "text", "content": "Registration is the step that creates or updates your voter record (rules vary by region)." },
+      { "type": "steps", "title": "Simple registration checklist", "content": ["Choose the correct method (online/form/in-person)", "Prepare identity/address documents if required", "Submit before the deadline and save your reference number"] }
+    ],
+    "learnMore": [
+      { "type": "bullets", "title": "Common mistakes to avoid", "content": ["Waiting until the deadline week", "Typos in name/address", "Not saving the reference number"] }
+    ]
+  },
+  {
+    "id": "documents",
+    "keywords": ["documents", "document", "id", "identity proof", "what to carry", "voter card", "voter id"],
+    "answer": [
+      { "type": "text", "content": "Most regions require an accepted identity proof. Some also allow alternate IDs." },
+      { "type": "steps", "title": "What to do", "content": ["Check accepted IDs for your region", "Keep your primary ID ready", "If allowed, carry an alternate ID as backup"] }
+    ],
+    "learnMore": [
+      { "type": "callout", "title": "Polling day tip", "content": "Pack your documents the night before to reduce stress." }
+    ]
+  },
+  {
+    "id": "missing_name",
+    "keywords": ["missing", "not in voter list", "not on the list", "name missing", "electoral roll", "voter list"],
+    "answer": [
+      { "type": "text", "content": "If your name is missing, you may need to register or file a correction request within the allowed window." },
+      { "type": "steps", "title": "Try this", "content": ["Re-check spelling and details", "Confirm your application status if you recently registered", "Submit a correction/registration request before the deadline"] }
+    ],
+    "learnMore": [
+      { "type": "bullets", "title": "Helpful proof to keep", "content": ["Submission receipt", "Reference number", "Screenshots of your status page"] }
+    ]
+  },
+  {
+    "id": "polling_day",
+    "keywords": ["polling day", "how to vote", "at the booth", "what happens", "procedure", "queue"],
+    "answer": [
+      { "type": "text", "content": "Polling day is designed to be guided. Staff verify your identity and help you follow the official steps." },
+      { "type": "steps", "title": "Quick polling-day flow", "content": ["Arrive during polling hours", "Show accepted ID for verification", "Follow instructions to cast your vote carefully", "Confirm you’ve completed the process before leaving"] }
+    ],
+    "learnMore": [
+      { "type": "callout", "title": "Confidence tip", "content": "If you’re unsure at any step, ask polling staff before you finalize." }
+    ]
+  },
+  {
+    "id": "counting_results",
+    "keywords": ["counting", "results", "after voting", "what happens after", "result declaration"],
+    "answer": [
+      { "type": "text", "content": "After polling closes, votes are counted under official procedures. Results may be published in stages." },
+      { "type": "steps", "title": "What to expect", "content": ["Partial updates may change", "Final results are confirmed after official declaration/certification", "Use official sources for final results"] }
+    ],
+    "learnMore": [
+      { "type": "bullets", "title": "Avoid this", "content": ["Sharing unverified screenshots", "Assuming early claims are final"] }
+    ]
+  }
+]
+

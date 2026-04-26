@@ -1,0 +1,31 @@
+[
+  {
+    "id": "mf-1",
+    "myth": "I can vote anywhere in the country.",
+    "fact": "In many systems, you must vote at your assigned polling station.",
+    "explanation": "Polling stations are usually linked to your registered address or constituency. Rules vary, but you should confirm your assigned location.",
+    "whatToDoTip": "Verify your polling station in the voter list and plan your route in advance."
+  },
+  {
+    "id": "mf-2",
+    "myth": "I need only a voter ID card.",
+    "fact": "Some regions accept multiple forms of approved identification.",
+    "explanation": "Accepted IDs can vary. Some places require a specific voter card; others allow alternates.",
+    "whatToDoTip": "Check your region’s accepted ID list and carry a backup if allowed."
+  },
+  {
+    "id": "mf-3",
+    "myth": "If I am 18, I can vote automatically.",
+    "fact": "Turning 18 does not always register you automatically.",
+    "explanation": "Many systems require registration or a verified voter record before you can vote.",
+    "whatToDoTip": "Register early (if required) and verify your name in the voter list."
+  },
+  {
+    "id": "mf-4",
+    "myth": "If my name is not on the voter list, I can still vote.",
+    "fact": "In many regions, your name must appear on the official voter list to vote.",
+    "explanation": "Polling staff often verify your details against an official roll. If you are missing, you may need to resolve it before polling day.",
+    "whatToDoTip": "Use the correction window to fix missing/incorrect details and re-check closer to polling day."
+  }
+]
+

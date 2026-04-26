@@ -1,0 +1,203 @@
+[
+  {
+    "id": "eligibility",
+    "title": "Check Voting Eligibility",
+    "short": "Confirm you meet the basic rules to vote in your area.",
+    "whyItMatters": "If you are not eligible yet, you can still plan what to do next (like registering when you turn 18 or updating citizenship records).",
+    "whatToDo": [
+      "Check the minimum voting age in your country or region",
+      "Confirm citizenship and residency requirements",
+      "If you recently moved, check if you must register in your new address"
+    ],
+    "commonMistakes": [
+      "Assuming turning 18 automatically registers you",
+      "Using outdated rules from a different region",
+      "Waiting until the last week to confirm eligibility"
+    ],
+    "tips": [
+      "If rules vary by region, use the Region selector in this app",
+      "If you are unsure, verify using the official election authority website when available"
+    ]
+  },
+  {
+    "id": "register",
+    "title": "Register as a Voter",
+    "short": "Submit your voter registration (or application) before the deadline.",
+    "whyItMatters": "Registration is usually the step that makes you officially eligible to cast a ballot on polling day.",
+    "whatToDo": [
+      "Find the registration method: online, form submission, or in-person",
+      "Prepare identity and address documents",
+      "Submit the application and save your reference number"
+    ],
+    "commonMistakes": [
+      "Missing the deadline",
+      "Submitting incomplete documents",
+      "Not saving the application reference"
+    ],
+    "tips": [
+      "Take a clear photo/scan of documents to avoid rejection",
+      "Double-check spelling of name and address before submitting"
+    ]
+  },
+  {
+    "id": "verify_roll",
+    "title": "Verify Your Name in the Voter List",
+    "short": "Check that your name appears correctly in the official voter list/electoral roll.",
+    "whyItMatters": "If your name is missing or incorrect, you may not be allowed to vote, or your voting location may be wrong.",
+    "whatToDo": [
+      "Search the voter list using your details or reference number",
+      "Confirm spelling, address, and assigned polling station",
+      "Request correction if anything is wrong"
+    ],
+    "commonMistakes": [
+      "Checking too early and never re-checking later",
+      "Ignoring small errors (name spelling, address)",
+      "Not submitting a correction request during the allowed window"
+    ],
+    "tips": [
+      "Set a reminder to re-check closer to polling day",
+      "Keep screenshots/receipts for correction requests"
+    ]
+  },
+  {
+    "id": "announcement_dates",
+    "title": "Understand Election Announcement & Important Dates",
+    "short": "Learn key dates like nomination, polling, and counting.",
+    "whyItMatters": "Election steps are time-bound. Knowing dates helps you avoid missing deadlines and prepares you for polling day.",
+    "whatToDo": [
+      "Note the registration and correction deadlines",
+      "Save polling day and expected counting/results dates",
+      "Track your region’s announcements through official sources"
+    ],
+    "commonMistakes": [
+      "Relying on social media for dates",
+      "Assuming all regions have the same schedule",
+      "Not planning travel/time-off for polling day"
+    ],
+    "tips": [
+      "Add key dates to your calendar",
+      "If dates change, prioritize official notices"
+    ]
+  },
+  {
+    "id": "nomination_campaign",
+    "title": "Candidate Nomination & Campaign Phase",
+    "short": "This is when candidates file nominations and campaigns happen.",
+    "whyItMatters": "Understanding this phase helps you recognize official information, rules, and typical timelines without getting overwhelmed.",
+    "whatToDo": [
+      "Know the nomination window and when final candidate lists are published",
+      "Learn basic campaign rules (quiet periods, conduct codes, etc.) where applicable",
+      "Use official voter education resources for neutral information"
+    ],
+    "commonMistakes": [
+      "Confusing campaign messages with official voting instructions",
+      "Missing the final candidate list release date",
+      "Sharing unverified election claims"
+    ],
+    "tips": [
+      "For voting procedure questions, prefer election authority guidance",
+      "Focus on logistics: registration, dates, location, documents"
+    ]
+  },
+  {
+    "id": "locate_booth",
+    "title": "Locate Your Polling Station",
+    "short": "Find where you must go to vote and plan your trip.",
+    "whyItMatters": "Most systems require you to vote at your assigned station. Knowing it early reduces polling-day stress.",
+    "whatToDo": [
+      "Confirm your assigned polling station from the voter list",
+      "Check the address and nearest landmark",
+      "Plan your travel time and accessibility needs"
+    ],
+    "commonMistakes": [
+      "Assuming you can vote at any station",
+      "Arriving late because you didn’t plan travel time",
+      "Not checking station changes/updates"
+    ],
+    "tips": [
+      "Do a quick route check a day before if possible",
+      "If you need assistance, plan with a friend or family member"
+    ]
+  },
+  {
+    "id": "prepare_docs",
+    "title": "Prepare Required Documents",
+    "short": "Keep the right ID and documents ready before polling day.",
+    "whyItMatters": "Bringing approved identification helps you complete verification quickly and reduces the chance of being turned away.",
+    "whatToDo": [
+      "Check the list of accepted IDs for your region",
+      "Carry originals if required",
+      "Keep documents safe and easy to access on the day"
+    ],
+    "commonMistakes": [
+      "Bringing an unaccepted ID",
+      "Carrying a damaged/expired ID if validity matters",
+      "Forgetting to bring anything at all"
+    ],
+    "tips": [
+      "Pack your polling-day essentials the night before",
+      "If you do not have the main ID, check if alternates are allowed in your region"
+    ]
+  },
+  {
+    "id": "polling_day",
+    "title": "Vote on Polling Day",
+    "short": "Follow the official process at your polling station and cast your vote.",
+    "whyItMatters": "Knowing what happens inside the polling station helps first-time voters feel confident and avoid mistakes.",
+    "whatToDo": [
+      "Arrive during polling hours",
+      "Follow staff instructions and verification steps",
+      "Cast your vote carefully and confirm completion"
+    ],
+    "commonMistakes": [
+      "Arriving after closing time",
+      "Carrying prohibited items (if rules apply)",
+      "Rushing and making an avoidable marking/selection mistake"
+    ],
+    "tips": [
+      "If you have a question, ask polling staff before you finalize your choice",
+      "Stay calm—polling stations are designed to guide you step-by-step"
+    ]
+  },
+  {
+    "id": "counting",
+    "title": "Vote Counting Process",
+    "short": "Votes are counted following official procedures to ensure accuracy.",
+    "whyItMatters": "Understanding counting builds trust in the process and helps you ignore rumors and misinformation.",
+    "whatToDo": [
+      "Follow counting updates through official channels",
+      "Understand that counting can take time",
+      "Be cautious about unverified early claims"
+    ],
+    "commonMistakes": [
+      "Assuming results must be immediate",
+      "Sharing unofficial counts as final",
+      "Misunderstanding what partial results mean"
+    ],
+    "tips": [
+      "Look for official result dashboards or announcements",
+      "Expect updates in stages, especially in large elections"
+    ]
+  },
+  {
+    "id": "results",
+    "title": "Results Declaration",
+    "short": "Final results are officially declared after verification.",
+    "whyItMatters": "Official declaration indicates the results are finalized according to the rules and verification checks.",
+    "whatToDo": [
+      "Check final results from official sources",
+      "Understand that final certification may happen after preliminary counts",
+      "Save links/screenshots of official announcements for reference"
+    ],
+    "commonMistakes": [
+      "Treating unofficial sources as final",
+      "Confusing preliminary updates with official declaration",
+      "Falling for fake result screenshots"
+    ],
+    "tips": [
+      "Prefer official election authority websites or verified announcements",
+      "If in doubt, wait for the official declaration"
+    ]
+  }
+]
+

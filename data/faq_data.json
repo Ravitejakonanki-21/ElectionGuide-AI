@@ -1,0 +1,89 @@
+[
+  {
+    "id": "faq-eligible-1",
+    "category": "Eligibility",
+    "question": "Am I eligible to vote?",
+    "answer": "Eligibility depends on your age, citizenship status, and residency rules in your region.",
+    "steps": [
+      "Confirm you meet the minimum voting age",
+      "Confirm citizenship/residency requirements",
+      "Register (if registration is required in your region)"
+    ],
+    "learnMore": [
+      "Use the Eligibility Checker for a quick readiness result",
+      "When available, verify details via official election authority sources"
+    ]
+  },
+  {
+    "id": "faq-register-1",
+    "category": "Registration",
+    "question": "How do I register as a voter?",
+    "answer": "Most regions offer online, form-based, or in-person registration. The steps are similar: submit your details, attach documents if required, and save your reference number.",
+    "steps": [
+      "Choose the correct registration method for your region",
+      "Prepare identity/address documents",
+      "Submit before the deadline and keep a record"
+    ]
+  },
+  {
+    "id": "faq-docs-1",
+    "category": "Documents",
+    "question": "What documents do I need?",
+    "answer": "You usually need an accepted identity proof. Some regions also require address or age proof for registration or corrections.",
+    "steps": [
+      "Check accepted IDs for your region",
+      "Prepare any additional proofs if required",
+      "Keep originals safe for polling day if needed"
+    ]
+  },
+  {
+    "id": "faq-voterlist-1",
+    "category": "Voter List Issues",
+    "question": "What if my name is missing from the voter list?",
+    "answer": "If your name is missing, you may need to register or submit a correction request within the allowed window.",
+    "steps": [
+      "Search again with correct spelling and details",
+      "Check if your registration is still processing",
+      "Submit a registration/correction request before the deadline"
+    ],
+    "learnMore": [
+      "Keep screenshots/receipts of your submission",
+      "Re-check closer to polling day"
+    ]
+  },
+  {
+    "id": "faq-polling-1",
+    "category": "Polling Day",
+    "question": "What should I carry on polling day?",
+    "answer": "Carry an accepted ID. If your region provides a voter slip or polling information, take it as a helpful optional item.",
+    "steps": [
+      "Pack your approved ID",
+      "Bring optional polling info/voter slip if available",
+      "Arrive during polling hours and follow staff instructions"
+    ]
+  },
+  {
+    "id": "faq-counting-1",
+    "category": "Counting & Results",
+    "question": "What happens after I cast my vote?",
+    "answer": "After polling closes, votes are counted under official procedures. Results may be shared in phases and become final after official declaration.",
+    "steps": [
+      "Follow official counting updates",
+      "Understand that partial results can change",
+      "Wait for final declaration/certification"
+    ]
+  },
+  {
+    "id": "faq-firsttime-1",
+    "category": "First-Time Voter Help",
+    "question": "I’m voting for the first time. What’s the simplest way to prepare?",
+    "answer": "Start with eligibility, register early, verify your voter details, prepare documents, and plan your polling station visit.",
+    "steps": [
+      "Check eligibility",
+      "Register and save your reference number",
+      "Verify your name and polling station",
+      "Prepare documents and polling-day plan"
+    ]
+  }
+]
+
