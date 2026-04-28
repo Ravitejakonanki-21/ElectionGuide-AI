@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import { sanitizeChatInput, validateChatInput } from "@/lib/sanitize";
 import { answerQuestion } from "@/lib/chatEngine";
 
@@ -22,7 +23,6 @@ async function askGemini(question: string): Promise<string | null> {
   if (!USE_GEMINI) return null;
 
   try {
-    const { GoogleGenerativeAI } = await import("@google/generative-ai");
     const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({
       model: "gemini-1.5-flash",
@@ -32,8 +32,9 @@ async function askGemini(question: string): Promise<string | null> {
     const result = await model.generateContent(question);
     const text = result.response.text();
     return text ?? null;
-  } catch {
-    // Gracefully fall back to local knowledge base on any error
+  } catch (err) {
+    // Log the real error and gracefully fall back to local knowledge base
+    console.error("[Gemini] Error calling API:", err);
     return null;
   }
 }
