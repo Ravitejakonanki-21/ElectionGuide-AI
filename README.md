@@ -1,62 +1,155 @@
-# ElectionGuide AI (VoteReady AI)
+# ElectionGuide AI
 
-**Tagline**: “ElectionGuide AI – Your simple, interactive guide to understanding elections, timelines, and voting with confidence.”
+[![CI](https://github.com/Ravitejakonanki-21/ElectionGuide-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/Ravitejakonanki-21/ElectionGuide-AI/actions/workflows/ci.yml)
 
-ElectionGuide AI is a **neutral, non-partisan, beginner-friendly** CivicTech web app that explains the election journey step-by-step using:
-- Interactive **process flow**
-- Visual **timeline**
-- **Eligibility checker**
-- Smart **documents checklist** + downloadable summary
-- **AI-style assistant** (demo mode: local knowledge base, no external AI calls)
-- **First Vote Journey** wizard
-- **Readiness quiz**
-- **FAQ + Myth vs Fact**
-- **Polling Day Confidence Mode**
+> **"ElectionGuide AI – Your simple, interactive guide to understanding elections, timelines, and voting with confidence."**
 
-## Safety + neutrality disclaimer
-This platform is for **educational guidance only** and does **not** endorse any political party or candidate. Always verify final rules and dates with your official election authority.
+ElectionGuide AI is a **neutral, non-partisan, beginner-friendly** CivicTech web app built with Next.js and powered by **Google Gemini AI**. It explains the election journey step-by-step.
 
-## Tech stack
-- Next.js (App Router) + TypeScript
-- Tailwind CSS
-- Framer Motion
-- Lucide React
-- Zustand (local persistence via `localStorage`)
-- Data-driven mock content in `data/*.json`
+🔗 **Live Demo**: https://election-guide-ai-679254492.us-central1.run.app
 
-## Getting started (local dev)
-From the `vote/` directory:
+---
+
+## Features
+
+- 🤖 **AI Election Assistant** — powered by Google Gemini 2.0 Flash, with local knowledge base fallback
+- 📋 **Eligibility Checker** — interactive eligibility assessment
+- 📅 **Election Timeline** — visual step-by-step timeline with deadline alerts
+- 📄 **Documents Checklist** — smart checklist with downloadable PDF summary
+- 🗺️ **First Vote Journey** — guided wizard for first-time voters
+- 📊 **Readiness Quiz** — election readiness scoring
+- ❓ **FAQ & Myth vs Fact** — civic myth-busting
+- 🗳️ **Polling Day Confidence Mode** — last-mile checklist
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16 (App Router) + TypeScript |
+| AI | Google Gemini 2.0 Flash (`@google/generative-ai`) |
+| Analytics | Google Analytics 4 |
+| Deployment | Google Cloud Run |
+| Styling | Tailwind CSS + Framer Motion |
+| State | Zustand (localStorage persistence) |
+| Testing | Jest + ts-jest + Testing Library |
+
+---
+
+## Getting Started
 
 ```bash
+# Install dependencies
 npm install
+
+# Create local environment file
+cp .env.example .env.local
+# Add your GEMINI_API_KEY to .env.local
+
+# Run dev server
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Build
+---
+
+## Environment Variables
+
+| Variable | Required | Description |
+|---|---|---|
+| `GEMINI_API_KEY` | Recommended | Google Gemini API key (free at [aistudio.google.com](https://aistudio.google.com/app/apikey)) |
+| `NEXT_PUBLIC_GA4_MEASUREMENT_ID` | Optional | Google Analytics 4 Measurement ID |
+
+> Without `GEMINI_API_KEY`, the assistant falls back to the local knowledge base automatically.
+
+---
+
+## Scripts
 
 ```bash
-npm run build
-npm run start
+npm run dev        # Development server
+npm run build      # Production build
+npm run start      # Start production server
+npm test           # Run unit tests with coverage
+npm run lint       # Lint with ESLint
+npm run lint:fix   # Auto-fix lint issues
 ```
 
-## App routes (judge-friendly)
-- `/` Home (hero + quick actions + readiness snapshot)
-- `/process` Interactive election process flow
-- `/timeline` Timeline visualizer + deadline alerts (demo)
-- `/first-vote` First Vote Journey wizard
-- `/eligibility` Eligibility checker
-- `/documents` Documents & checklist + download summary
-- `/assistant` AI Election Assistant (demo, local knowledge base)
-- `/learn` FAQ + Myth vs Fact
-- `/polling-day` Polling Day Confidence Mode
-- `/quiz` Election readiness quiz
+---
 
-## Demo walkthrough (2–3 minutes)
-1. Open **Home** and point out the **readiness snapshot**.\n+2. Go to **Eligibility** and generate a result.\n+3. Go to **Documents** and tick a few items.\n+4. Open **First Vote Journey** and mark a step complete.\n+5. Use **Ask AI** and click a suggested question.\n+6. Finish the **Quiz** and show the result.\n+7. Open **Polling Day Confidence Mode** for the “last-mile” checklist.\n+
-Readiness progress persists on this device via `localStorage`.
+## Testing
 
-## Project structure
-- `app/` Next.js routes\n+- `components/` reusable UI + feature components\n+- `data/` mock JSON datasets (steps, timeline, docs, FAQ, myths, regions, quiz, deadlines, chat)\n+- `lib/` typed loaders + readiness scoring + chat engine + persistence helpers
+```bash
+npm test
+```
 
+- **35 unit tests** covering: chat engine, readiness scoring, input sanitization
+- Coverage reports in `coverage/` directory
+- CI runs tests automatically on every push via GitHub Actions
+
+---
+
+## Security
+
+- **Content Security Policy (CSP)** headers
+- **X-Frame-Options: DENY** — prevents clickjacking
+- **HSTS** — enforces HTTPS
+- **Input sanitization** — strips XSS, enforces 500-char limit
+- **Rate limiting** — 30 req/min per IP on `/api/chat`
+
+---
+
+## App Routes
+
+| Route | Description |
+|---|---|
+| `/` | Home — hero + readiness snapshot |
+| `/process` | Interactive election process flow |
+| `/timeline` | Timeline visualizer + deadline alerts |
+| `/eligibility` | Eligibility checker |
+| `/documents` | Documents checklist + download |
+| `/assistant` | AI Election Assistant (Gemini) |
+| `/first-vote` | First Vote Journey wizard |
+| `/learn` | FAQ + Myth vs Fact |
+| `/polling-day` | Polling Day Confidence Mode |
+| `/quiz` | Election readiness quiz |
+| `/sitemap.xml` | XML sitemap for SEO |
+
+---
+
+## Deployment (Google Cloud Run)
+
+```bash
+# Build and push image
+gcloud builds submit --project election-494710 --tag gcr.io/election-494710/election-guide-ai:latest .
+
+# Deploy to Cloud Run
+gcloud run deploy election-guide-ai \
+  --image gcr.io/election-494710/election-guide-ai:latest \
+  --region us-central1 --allow-unauthenticated \
+  --set-env-vars "GEMINI_API_KEY=your_key"
+```
+
+---
+
+## Project Structure
+
+```
+├── app/                  # Next.js App Router pages + API routes
+│   ├── api/chat/         # Gemini AI chat endpoint
+│   ├── assistant/        # AI assistant page
+│   └── ...               # All other routes
+├── components/           # Reusable UI + feature components
+├── data/                 # JSON knowledge base (chat, quiz, docs, etc.)
+├── lib/                  # Core logic: chatEngine, readiness, sanitize, analytics
+├── __tests__/            # Jest unit tests
+└── .github/workflows/    # GitHub Actions CI
+```
+
+---
+
+## Safety & Neutrality
+
+This platform is for **educational guidance only** and does **not** endorse any political party or candidate. Always verify final rules and dates with your official election authority.
