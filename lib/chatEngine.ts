@@ -1,5 +1,3 @@
-"use client";
-
 import { getChatIntents } from "@/lib/data";
 import type { ChatBlock, ChatIntent } from "@/lib/types";
 
