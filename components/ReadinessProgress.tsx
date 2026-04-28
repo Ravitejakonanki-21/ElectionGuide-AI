@@ -54,11 +54,17 @@ export function ReadinessProgress({
             </div>
           </div>
         </div>
-        <div className="mt-4 h-3 w-full overflow-hidden rounded-full bg-[var(--color-muted)]">
+        <div
+          className="mt-4 h-3 w-full overflow-hidden rounded-full bg-[var(--color-muted)]"
+          role="progressbar"
+          aria-valuenow={readiness.score}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={`Voter readiness: ${readiness.score}% — ${readiness.label}`}
+        >
           <div
             className="h-full rounded-full bg-[var(--color-primary)] transition-all"
             style={{ width: `${readiness.score}%` }}
-            aria-hidden="true"
           />
         </div>
       </CardContent>

@@ -3,10 +3,12 @@
 import { getChatIntents } from "@/lib/data";
 import type { ChatBlock, ChatIntent } from "@/lib/types";
 
+/** Normalizes text for consistent keyword matching. */
 function normalize(text: string) {
   return text.toLowerCase().replace(/\s+/g, " ").trim();
 }
 
+/** Scores an intent against a query based on keyword overlap. */
 function scoreIntent(q: string, intent: ChatIntent) {
   const nq = normalize(q);
   let score = 0;
@@ -24,15 +26,34 @@ export type ChatAnswer = {
   learnMore?: ChatBlock[];
 };
 
+/** Simple LRU-style cache for repeated identical queries (max 50 entries). */
+const answerCache = new Map<string, ChatAnswer>();
+const CACHE_MAX = 50;
+
+/**
+ * Answers a user question using the local intent knowledge base.
+ * Results are cached in-memory so repeated identical questions are O(1).
+ *
+ * @param question - Raw user question string
+ * @returns A ChatAnswer with intentId, answer blocks, and optional learnMore blocks
+ */
 export function answerQuestion(question: string): ChatAnswer {
+  const cacheKey = normalize(question);
+
+  if (answerCache.has(cacheKey)) {
+    return answerCache.get(cacheKey)!;
+  }
+
   const intents = getChatIntents() as ChatIntent[];
   const scored = intents
     .map((i) => ({ i, s: scoreIntent(question, i) }))
     .sort((a, b) => b.s - a.s);
 
   const best = scored[0];
+  let result: ChatAnswer;
+
   if (!best || best.s <= 0) {
-    return {
+    result = {
       intentId: "fallback",
       answer: [
         {
@@ -53,8 +74,16 @@ export function answerQuestion(question: string): ChatAnswer {
         },
       ],
     };
+  } else {
+    result = { intentId: best.i.id, answer: best.i.answer, learnMore: best.i.learnMore };
   }
 
-  return { intentId: best.i.id, answer: best.i.answer, learnMore: best.i.learnMore };
-}
+  // Evict oldest entry if cache is full
+  if (answerCache.size >= CACHE_MAX) {
+    const firstKey = answerCache.keys().next().value;
+    if (firstKey !== undefined) answerCache.delete(firstKey);
+  }
+  answerCache.set(cacheKey, result);
 
+  return result;
+}
